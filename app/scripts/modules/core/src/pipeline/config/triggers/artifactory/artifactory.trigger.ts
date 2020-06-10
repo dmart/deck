@@ -8,5 +8,8 @@ Registry.pipeline.registerTrigger({
   key: 'artifactory',
   component: ArtifactoryTrigger,
   validators: [],
-  excludedArtifactTypePatterns: excludeAllTypesExcept(ArtifactTypePatterns.MAVEN_FILE),
+  excludedArtifactTypePatterns: excludeAllTypesExcept(
+    ArtifactTypePatterns.MAVEN_FILE,
+    ArtifactTypePatterns.DEBIAN_FILE,
+  ),
 });
