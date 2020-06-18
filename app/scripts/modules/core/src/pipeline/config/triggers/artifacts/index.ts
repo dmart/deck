@@ -1,6 +1,7 @@
 import { IArtifactKindConfig } from 'core/domain';
 
 import { Base64Match, Base64Default } from './base64/Base64ArtifactEditor';
+import { DebMatch, DebDefault } from './deb/DebArtifactEditor';
 import { BitbucketMatch, BitbucketDefault } from './bitbucket/BitbucketArtifactEditor';
 import { CustomMatch, CustomDefault } from './custom/CustomArtifactEditor';
 import { DockerMatch, DockerDefault } from './docker/DockerArtifactEditor';
@@ -19,6 +20,8 @@ import { S3Match, S3Default } from './s3/S3ArtifactEditor';
 export const artifactKindConfigs: IArtifactKindConfig[] = [
   Base64Match,
   Base64Default,
+  DebMatch,
+  DebDefault,
   BitbucketMatch,
   BitbucketDefault,
   CustomMatch,
