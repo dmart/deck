@@ -5,7 +5,7 @@ import { singleFieldArtifactEditor } from '../singleFieldArtifactEditor';
 
 export const DebMatch: IArtifactKindConfig = {
   label: 'Deb',
-  typePattern: ArtifactTypePatterns.DEB_FILE,
+  typePattern: ArtifactTypePatterns.DEBIAN_FILE,
   type: 'deb/file',
   description: 'A Debian repository artifact.',
   key: 'deb',
@@ -16,7 +16,7 @@ export const DebMatch: IArtifactKindConfig = {
 
 export const DebDefault: IArtifactKindConfig = {
   label: 'Deb',
-  typePattern: ArtifactTypePatterns.DEB_FILE,
+  typePattern: ArtifactTypePatterns.DEBIAN_FILE,
   type: 'deb/file',
   description: 'A Debian repository artifact.',
   key: 'deb',
